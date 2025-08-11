@@ -24,6 +24,7 @@ function getAge(birthdayValue) {
       currentDate.getDate() < birthdayDate.getDate())) {
     age--
   }
+  return age
 }
 
 btnEl.addEventListener('click', calculateAge)
