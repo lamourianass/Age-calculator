@@ -16,7 +16,13 @@ function getAge(birthdayValue) {
   const birthdayDate = new Date(birthdayValue)
 
   const age = currentDate.getFullYear() - birthdayDate.getFullYear()
-  const months = currentDate.getMonth() - birthdayDate.getMonth()
+  const month = currentDate.getMonth() - birthdayDate.getMonth()
+
+  if (month < 0 ||
+    (month === 0 &&
+      currentDate.getDate() < birthdayDate.getDate())) {
+    age--
+  }
 }
 
 btnEl.addEventListener('click', calculateAge)
