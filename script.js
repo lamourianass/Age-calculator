@@ -13,7 +13,8 @@ function calculateAge() {
 
 function getAge(birthdayValue) {
   const currentDate = new Date()
-  console.log(currentDate)
+  const birthdayDate = new Date()
+  console.log(currentDate.getFullYear())
 }
 
 btnEl.addEventListener('click', calculateAge)
