@@ -13,7 +13,7 @@ function calculateAge() {
 
 function getAge(birthdayValue) {
   const currentDate = new Date()
-  const birthdayDate = new Date()
+  const birthdayDate = new Date(birthdayValue)
   console.log(currentDate.getFullYear())
 }
 
