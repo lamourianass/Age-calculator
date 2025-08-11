@@ -8,6 +8,7 @@ function calculateAge() {
     alert("Please enter your birthday")
   } else {
     const age = getAge(birthdayValue)
+    console.log(age)
   }
 }
 
@@ -15,7 +16,7 @@ function getAge(birthdayValue) {
   const currentDate = new Date()
   const birthdayDate = new Date(birthdayValue)
 
-  const age = currentDate.getFullYear() - birthdayDate.getFullYear()
+  let age = currentDate.getFullYear() - birthdayDate.getFullYear()
   const month = currentDate.getMonth() - birthdayDate.getMonth()
 
   if (month < 0 ||
