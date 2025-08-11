@@ -3,9 +3,14 @@ const birthdayEl = document.getElementById('birthday')
 
 function calculateAge() {
   const birthdayValue = birthdayEl.value
+
   if (birthdayValue === "") {
     alert("Please enter your birthday")
+  } else {
+    
   }
 }
+
+
 
 btnEl.addEventListener('click', calculateAge)
