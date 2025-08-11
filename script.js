@@ -11,6 +11,8 @@ function calculateAge() {
   }
 }
 
-
+function getAge() {
+  
+}
 
 btnEl.addEventListener('click', calculateAge)
