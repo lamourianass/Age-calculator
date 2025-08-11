@@ -7,7 +7,7 @@ function calculateAge() {
   if (birthdayValue === "") {
     alert("Please enter your birthday")
   } else {
-    
+    const age = getAge(birthdayValue)
   }
 }
 
