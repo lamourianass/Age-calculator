@@ -1,5 +1,6 @@
 const btnEl = document.getElementById('btn')
 const birthdayEl = document.getElementById('birthday')
+const resultEl = document.getElementById('result')
 
 function calculateAge() {
   const birthdayValue = birthdayEl.value
@@ -8,7 +9,7 @@ function calculateAge() {
     alert("Please enter your birthday")
   } else {
     const age = getAge(birthdayValue)
-    console.log(age)
+
   }
 }
 
